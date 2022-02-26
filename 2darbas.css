@@ -1,0 +1,99 @@
+.main {
+    display: flex;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    border: 1px solid black;
+    width: 250px;
+    height: 250px;
+  }
+  
+  .box {
+      width: 100px;
+      height: 100px;
+      background-color: green;
+  }
+  .a {
+      animation-name: boxa;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+  }
+  @keyframes boxa{
+      0%{
+
+      }
+      100%{
+        width: 200px;
+        height: 200px;
+      }
+  }
+  .b {
+    animation-name: boxb;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes boxb{
+    0%{
+
+    }
+    100%{
+      width: 200px;
+      height: 200px;
+    }
+}
+.c {
+    animation-name: boxc;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes boxc{
+    0%{
+
+    }
+    100%{
+      width: 200px;
+      height: 200px;
+      opacity: 0;
+    }
+}
+.d {
+    transition: transform 2s;
+}
+.d:hover {
+    transform: scale(2);
+}
+.e {
+    position: relative;
+    animation-name: boxe;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+@keyframes boxe{
+    0%{
+
+    }
+    25%{
+        background-color: red;
+    }
+    50%{
+        background-color: blue;
+    }
+    75%{
+        background-color: blueviolet;
+    }
+    100%{
+        background-color: yellow;  
+        width: 200px;
+        height: 200px;
+    }
+}

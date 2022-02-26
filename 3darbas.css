@@ -1,0 +1,55 @@
+.main {
+    display: flex;
+  }
+  
+  .container {
+    display: flex;
+    align-items: flex-end;
+    /* margin: 25px; */
+    border: 1px solid black;
+    width: 250px;
+    height: 250px;
+  }
+  
+  .box {
+      width: 70px;
+      height: 70px;
+      background-color: green;
+      position: absolute;
+  }
+  .a {
+    animation-name: boxa;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes boxa {
+      0%{
+          left: 0;
+
+      }
+      /* 50%{
+          left: 97px;
+      } */
+      100%{
+          left: 250px;
+      }
+  }
+  .b {
+    animation-name: boxb;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  @keyframes boxb {
+      0%{
+          left: 0;
+          top: 250px;
+
+      }
+      
+      100%{
+          top: 250px; 
+          left: 250px;
+      }
+  }
